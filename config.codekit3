@@ -7,14 +7,14 @@
       "uuidString" : "2F66EE1A-F279-4304-A82B-AC408D0A71EE"
     }
   ],
-  "creatorBuild" : "34472",
+  "creatorBuild" : "34484",
   "files" : {
-    "\/assets\/about-left.jpg" : {
+    "\/Assets\/carRepair.jpg" : {
       "ft" : 16384,
-      "iS" : 240900,
+      "iS" : 254454,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/about-left.jpg",
+      "oAP" : "\/Assets\/carRepair.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -22,12 +22,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/about.jpg" : {
+    "\/Assets\/centerbeamCar.jpg" : {
       "ft" : 16384,
-      "iS" : 252641,
+      "iS" : 201851,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/about.jpg",
+      "oAP" : "\/Assets\/centerbeamCar.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -35,52 +35,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/Andriod.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/Andriod.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/Apple.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/Apple.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/aws.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/aws.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/Google.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/Google.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/hero-2.jpg" : {
+    "\/Assets\/EMD_GP38-2_GMTX_2146.jpg" : {
       "ft" : 16384,
-      "iS" : 1003073,
+      "iS" : 1606364,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/hero-2.jpg",
+      "oAP" : "\/Assets\/EMD_GP38-2_GMTX_2146.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -88,12 +48,32 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/hero.jpg" : {
+    "\/Assets\/facebook.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/facebook.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/GATX_Logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/GATX_Logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/gondola.jpg" : {
       "ft" : 16384,
-      "iS" : 479600,
+      "iS" : 113821,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/hero.jpg",
+      "oAP" : "\/Assets\/gondola.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -101,39 +81,162 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/In-class-S23.fig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/Assets\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 396439,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/In-class-S23.fig",
-      "oF" : 0
+      "oAP" : "\/Assets\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
-    "\/assets\/logo.svg" : {
+    "\/Assets\/instagram.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/logo.svg",
+      "oAP" : "\/Assets\/instagram.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/assets\/MS.svg" : {
+    "\/Assets\/location-arrow-light.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/MS.svg",
+      "oAP" : "\/Assets\/location-arrow-light.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/assets\/reddit.svg" : {
+    "\/Assets\/logoEvolution.jpg" : {
+      "ft" : 16384,
+      "iS" : 261386,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/logoEvolution.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/mobile-android-light.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/reddit.svg",
+      "oAP" : "\/Assets\/mobile-android-light.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/railPulse.png" : {
+      "ft" : 32768,
+      "iS" : 310285,
+      "oA" : 0,
+      "oAP" : "\/Assets\/railPulse.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Assets\/search.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/search.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/sort-up-solid.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/sort-up-solid.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/tankCar1.jpg" : {
+      "ft" : 16384,
+      "iS" : 490625,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/tankCar1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/tankCar2.jpg" : {
+      "ft" : 16384,
+      "iS" : 342216,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/tankCar2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/tankCarInspection.jpg" : {
+      "ft" : 16384,
+      "iS" : 313027,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/tankCarInspection.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/twitter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/twitter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/welding.jpg" : {
+      "ft" : 16384,
+      "iS" : 167721,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/welding.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/youtube.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/youtube.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -150,6 +253,159 @@
       "oAP" : "\/deploy\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/deploy\/img\/gallery\/centerbeamCar.jpg" : {
+      "ft" : 16384,
+      "iS" : 201851,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/centerbeamCar.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gallery\/gondola.jpg" : {
+      "ft" : 16384,
+      "iS" : 113821,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/gondola.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gallery\/tankCar2.jpg" : {
+      "ft" : 16384,
+      "iS" : 342216,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/tankCar2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/global\/GATX_Logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/global\/GATX_Logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/heroes\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 396439,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/heroes\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/services\/carRepair.jpg" : {
+      "ft" : 16384,
+      "iS" : 254454,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/services\/carRepair.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/services\/logoEvolution.jpg" : {
+      "ft" : 16384,
+      "iS" : 261386,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/services\/logoEvolution.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/services\/railPulse.png" : {
+      "ft" : 32768,
+      "iS" : 310285,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/services\/railPulse.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/services\/tankCar1.jpg" : {
+      "ft" : 16384,
+      "iS" : 490625,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/services\/tankCar1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/services\/welding.jpg" : {
+      "ft" : 16384,
+      "iS" : 167721,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/services\/welding.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/subhero\/EMD_GP38-2_GMTX_2146.jpg" : {
+      "ft" : 16384,
+      "iS" : 1606364,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/subhero\/EMD_GP38-2_GMTX_2146.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/subhero\/tankCarInspection.jpg" : {
+      "ft" : 16384,
+      "iS" : 313027,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/subhero\/tankCarInspection.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/index.html" : {
       "cB" : 0,
@@ -170,11 +426,51 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/content\/gallery.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/gallery.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/hero1.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero1.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/search.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/search.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/services.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/services.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/subhero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/subhero.html",
+      "oF" : 0
+    },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },
@@ -190,7 +486,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
@@ -385,6 +681,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/prepros.config" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/prepros.config",
+      "oF" : 0
     }
   },
   "hooks" : [
@@ -395,7 +699,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 702560800.42181301,
-    "displayValue" : "InClass-Demo-S23",
+    "displayValue" : "Web-3-HW-S23",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_gray",
     "iconImageWasSetByUser" : 0
@@ -1912,7 +2216,7 @@
       "moduleType" : 2,
       "removeComments" : 0,
       "sourceMapStyle" : 0,
-      "targetECMAVersion" : 0
+      "targetECMAVersion" : 2018
     },
     "languageDefaultsUserDefined" : [
 
@@ -1968,7 +2272,10 @@
     "skippedFoldersString" : "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
+    "tsAllowArbitraryExtensions" : 0,
+    "tsAllowImportingTSExtensions" : 0,
     "tsAllowSyntheticDefaultImports" : 0,
+    "tsAllowUMDGlobalAccess" : 0,
     "tsAllowUnreachableCode" : 0,
     "tsAllowUnusedLabels" : 0,
     "tsAlwaysStrict" : 0,
@@ -1977,36 +2284,36 @@
     "tsEmitDecoratorMetadata" : 0,
     "tsESModuleInterop" : 0,
     "tsExactOptionalPropertyTypes" : 0,
+    "tsExperimentalDecorators" : 0,
     "tsForceConsistentCasingInFileNames" : 0,
     "tsImportHelpers" : 0,
     "tsIsolatedModules" : 0,
     "tsJSXFactory" : "React.createElement",
-    "tsKeyofStringsOnly" : 0,
     "tsNoEmitHelpers" : 0,
     "tsNoFallthroughCasesInSwitch" : 0,
     "tsNoImplicitAny" : 0,
     "tsNoImplicitOverride" : 0,
     "tsNoImplicitReturns" : 0,
     "tsNoImplicitThis" : 0,
-    "tsNoImplicitUseStrict" : 0,
     "tsNoLib" : 0,
     "tsNoPropertyAccessFromIndexSignature" : 0,
     "tsNoResolve" : 0,
-    "tsNoStrictGenericChecks" : 0,
     "tsNoUncheckedIndexAccess" : 0,
     "tsNoUnusedLocals" : 0,
     "tsNoUnusedParameters" : 0,
     "tsPreserveConstEnums" : 0,
     "tsPreserveSymlinks" : 0,
     "tsResolveJsonModule" : 0,
+    "tsSkipDefaultLibCheck" : 0,
     "tsSkipLibCheck" : 0,
+    "tsStrictBindCallApply" : 0,
     "tsStrictFunctionTypes" : 0,
     "tsStrictNullChecks" : 0,
     "tsStrictPropertyInitialization" : 0,
     "tsStripInternal" : 0,
-    "tsSuppressExcessPropertyErrors" : 0,
-    "tsSuppressImplicitAnyIndexErrors" : 0,
+    "tsUseDefineForClassFields" : 0,
     "tsUseUnknownInCatchVariables" : 0,
+    "tsVerbatimModuleSyntax" : 0,
     "uglifyDefinesString" : "",
     "uglifyFlags2" : {
       "arguments" : {
