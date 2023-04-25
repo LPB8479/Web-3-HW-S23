@@ -335,6 +335,10 @@ template {
   width: 100%;
 }
 
+div {
+  border: 1px solid red;
+}
+
 /* =============
     Typography
 ============= */
@@ -374,8 +378,7 @@ header {
   grid-template-columns: 16px auto 16px;
       grid-template-areas: ". header .";
 }
-
-> div {
+header > div {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: header;
@@ -394,6 +397,23 @@ img {
 /* =============
     Heroes
 ============= */
+#card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". card .";
+}
+#card > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: card;
+}
+
+.location-price {
+  background-color: #143b68;
+}
+
 /* =============
     Subhero
 ============= */

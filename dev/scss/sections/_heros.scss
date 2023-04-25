@@ -1,6 +1,15 @@
 /* =============
     Heroes
 ============= */
-#hero{
+#card {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". card .";
+  > div {
+    grid-area: card;
+  }
 
+}
+.location-price {
+  background-color: #143b68;
 }
