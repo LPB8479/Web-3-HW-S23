@@ -1,3 +1,12 @@
 /* =============
     Subhero
 ============= */
+#subhero {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". subhero .";
+    > div {
+      grid-area: subhero;
+    }
+  
+  }

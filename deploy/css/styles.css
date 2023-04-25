@@ -339,6 +339,19 @@ div {
   border: 1px solid red;
 }
 
+.header-footer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". header-footer .";
+}
+.header-footer-grid > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: header-footer;
+}
+
 /* =============
     Typography
 ============= */
@@ -371,19 +384,6 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 16px auto 16px;
-  grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". header .";
-}
-header > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: header;
-}
-
 img {
   width: 99.82px;
 }
@@ -417,9 +417,34 @@ img {
 /* =============
     Subhero
 ============= */
+#subhero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". subhero .";
+}
+#subhero > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: subhero;
+}
+
 /* =============
     Gallery
 ============= */
 /* =============
     Services
 ============= */
+#services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". services .";
+}
+#services > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: services;
+}
