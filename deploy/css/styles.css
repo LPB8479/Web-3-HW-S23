@@ -59,8 +59,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box; /* 1 */
+  box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -90,8 +89,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -229,8 +227,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -258,8 +255,7 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
@@ -336,15 +332,11 @@ template {
 }
 
 .header-footer-grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". header-footer .";
+  grid-template-areas: ". header-footer .";
 }
 .header-footer-grid > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: header-footer;
 }
 
@@ -366,13 +358,11 @@ ul li {
     Forms
 ============= */
 [type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 [type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus, textarea:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 input[type=text],
@@ -396,16 +386,12 @@ img {
     Footer
 ============= */
 footer {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". footer .";
+  grid-template-areas: ". footer .";
   background-color: #143b68;
 }
 footer > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: footer;
 }
 
@@ -413,15 +399,11 @@ footer > div {
     Search
 ============= */
 #search {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". search .";
+  grid-template-areas: ". search .";
 }
 #search > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: search;
 }
 
@@ -429,15 +411,11 @@ footer > div {
     Hero
 ============= */
 #hero section {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". hero-sub .";
+  grid-template-areas: ". hero-sub .";
 }
 #hero section > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: hero-sub;
 }
 
@@ -449,19 +427,13 @@ footer > div {
     Sub-Hero
 ============= */
 #sub-hero aside {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". sub-hero .";
+  grid-template-areas: ". sub-hero .";
 }
 #sub-hero aside > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: sub-hero;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70% auto;
   grid-template-columns: 70% auto;
 }
 
@@ -475,14 +447,10 @@ footer > div {
   width: 100%;
 }
 #services section .card-data {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". card-data .";
+  grid-template-areas: ". card-data .";
 }
 #services section .card-data > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: card-data;
 }
