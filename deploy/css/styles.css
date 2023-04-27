@@ -335,10 +335,6 @@ template {
   width: 100%;
 }
 
-div {
-  border: 1px solid red;
-}
-
 .header-footer-grid {
   display: -ms-grid;
   display: grid;
@@ -350,6 +346,14 @@ div {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: header-footer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
 }
 
 /* =============
@@ -391,23 +395,50 @@ img {
 /* =============
     Footer
 ============= */
-/* =============
-    Search
-============= */
-/* =============
-    Heroes
-============= */
-#card {
+footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". card .";
+      grid-template-areas: ". footer .";
+  background-color: #143b68;
 }
-#card > div {
+footer > div {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: card;
+  grid-area: footer;
+}
+
+/* =============
+    Search
+============= */
+#search {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". search .";
+}
+#search > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: search;
+}
+
+/* =============
+    Hero
+============= */
+#hero section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". hero-sub .";
+}
+#hero section > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: hero-sub;
 }
 
 .location-price {
@@ -415,19 +446,23 @@ img {
 }
 
 /* =============
-    Subhero
+    Sub-Hero
 ============= */
-#subhero {
+#sub-hero aside {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". subhero .";
+      grid-template-areas: ". sub-hero .";
 }
-#subhero > div {
+#sub-hero aside > div {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: subhero;
+  grid-area: sub-hero;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% auto;
+  grid-template-columns: 70% auto;
 }
 
 /* =============
@@ -436,15 +471,18 @@ img {
 /* =============
     Services
 ============= */
-#services {
+#services section img {
+  width: 100%;
+}
+#services section .card-data {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". services .";
+      grid-template-areas: ". card-data .";
 }
-#services > div {
+#services section .card-data > div {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: services;
+  grid-area: card-data;
 }

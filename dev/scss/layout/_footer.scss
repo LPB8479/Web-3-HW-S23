@@ -1,3 +1,12 @@
 /* =============
     Footer
 ============= */
+footer{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
+    background-color: #143b68;
+    >div{
+        grid-area: footer;
+    }
+}

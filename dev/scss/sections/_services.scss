@@ -1,12 +1,19 @@
 /* =============
     Services
 ============= */
-#services {
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". services .";
-    > div {
-      grid-area: services;
-    }
-  
+#services{
+  section{
+      img{
+          width: 100%;
+      }
+      .card-data{
+          
+          display: grid;
+          grid-template-columns: 16px auto 16px;
+          grid-template-areas: ". card-data .";
+          >div{
+              grid-area: card-data;
+          }
+      }
   }
+}
