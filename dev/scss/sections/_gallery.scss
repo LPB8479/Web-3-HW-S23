@@ -1,3 +1,20 @@
 /* =============
     Gallery
 ============= */
+#gallery {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "tank centerbeam"
+    "tank gondola";
+    #tank {
+      grid-area: tank;
+    }
+    #centerbeam {
+      grid-area: centerbeam;
+    }
+    #gondola {
+        grid-area: gondola;
+    }
+  }
+}

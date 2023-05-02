@@ -1,19 +1,76 @@
 /* =============
     Services
 ============= */
-#services{
-  section{
-      img{
-          width: 100%;
+#services {
+  section {
+    img {
+      width: 100%;
+    }
+
+    .card-data {
+      display: grid;
+      grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". card-data .";
+
+      > div {
+        grid-area: card-data;
       }
-      .card-data{
-          
-          display: grid;
-          grid-template-columns: 16px auto 16px;
-          grid-template-areas: ". card-data .";
-          >div{
-              grid-area: card-data;
-          }
+    }
+  }
+  @include md {
+    #container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "S1 S2"
+        "S3 S4"
+        "S5 S5";
+      #S1 {
+        grid-area: S1;
+        margin: 5px;
       }
+      #S2 {
+        grid-area: S2;
+        margin: 5px;
+      }
+      #S3 {
+        grid-area: S3;
+        margin: 5px;
+      }
+      #S4 {
+        grid-area: S4;
+        margin: 5px;
+      }
+      #S5 {
+        grid-area: S5;
+      }
+    }
+  }
+  @include lg {
+    #container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "S1 S1 S2 S2 S3 S3"
+        "S4 S4 S4 S5 S5 S5";
+      #S1 {
+        grid-area: S1;
+      }
+      #S2 {
+        grid-area: S2;
+      }
+      #S3 {
+        grid-area: S3;
+      }
+      #S4 {
+        grid-area: S4;
+      }
+      #S5 {
+        grid-area: S5;
+      }
+      > section {
+        margin: 5px;
+      }
+    }
   }
 }
