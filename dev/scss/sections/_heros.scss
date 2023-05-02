@@ -10,12 +10,13 @@
       grid-area: hero-sub;
       display: grid;
       grid-template-columns: 85% 15%;
-      grid-template-areas: "textx arrow";
+      grid-template-areas: "text arrow";
       > h1 {
-        grid-area: textx;
+        grid-area: text;
       }
       >h3 {
-        grid-area: textx;
+        grid-area: text;
+        color: #ffffff;
       }
       > a {
         grid-area: arrow;

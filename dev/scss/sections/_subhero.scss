@@ -4,16 +4,17 @@
 
 #subhero {
   aside {
-    background-color: #e0dfd5;
     display: grid;
     grid-template-columns: 16px 1fr 1fr 16px;
     grid-template-areas: ". leasing shop .";
     > div#leasing {
       border: 6px solid #ffffff;
+      background-color: #e0dfd5;
       grid-area: leasing;
     }
     > div#shop {
       border: 6px solid #ffffff;
+      background-color: #e0dfd5;
       grid-area: shop;
     }
   }

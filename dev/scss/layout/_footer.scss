@@ -1,12 +1,35 @@
 /* =============
     Footer
 ============= */
-footer{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". footer .";
+footer {
     background-color: #143b68;
-    >div{
-        grid-area: footer;
+    @include md {
+        div {
+            display: grid;
+            grid-template-columns: 16px 1fr 1fr 1fr 16px;
+            grid-template-areas:
+                ". locations newsletter ."
+                ". locations socials .";
+
+            #locations {
+                grid-area: locations;
+            }
+            #newsletter {
+                grid-area: newsletter;
+            }
+            #socials {
+                grid-area: socials;
+            }
+        }
+    }
+    @include lg {
+        div {
+            grid-template-areas: ". locations newsletter socials .";
+        }
+    }
+    h1,
+    li,
+    li>a {
+        color: #ffffff;
     }
 }

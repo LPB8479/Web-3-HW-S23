@@ -396,17 +396,63 @@ img {
     Footer
 ============= */
 footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 16px auto 16px;
-  grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". footer .";
   background-color: #143b68;
 }
-footer > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: footer;
+@media (min-width: 768px) {
+  footer div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 16px 1fr 1fr 1fr 16px;
+    grid-template-columns: 16px 1fr 1fr 1fr 16px;
+        grid-template-areas: ". locations newsletter ." ". locations socials .";
+  }
+  footer div #locations {
+    grid-area: locations;
+  }
+  footer div #newsletter {
+    grid-area: newsletter;
+  }
+  footer div #socials {
+    grid-area: socials;
+  }
+}
+@media (min-width: 768px) {
+  footer div #locations {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+  }
+  footer div #newsletter {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  footer div #socials {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+}
+@media (min-width: 1024px) {
+  footer div {
+        grid-template-areas: ". locations newsletter socials .";
+  }
+  footer div #locations {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+  }
+  footer div #newsletter {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  footer div #socials {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+  }
+}
+footer h1,
+footer li,
+footer li > a {
+  color: #ffffff;
 }
 
 /* =============
@@ -443,17 +489,18 @@ footer > div {
   display: grid;
   -ms-grid-columns: 85% 15%;
   grid-template-columns: 85% 15%;
-      grid-template-areas: "textx arrow";
+      grid-template-areas: "text arrow";
 }
 #hero section > div > h1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: textx;
+  grid-area: text;
 }
 #hero section > div > h3 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: textx;
+  grid-area: text;
+  color: #ffffff;
 }
 #hero section > div > a {
   -ms-grid-row: 1;
@@ -513,7 +560,6 @@ footer > div {
     Sub-Hero
 ============= */
 #subhero aside {
-  background-color: #e0dfd5;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 16px 1fr 1fr 16px;
@@ -524,12 +570,14 @@ footer > div {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   border: 6px solid #ffffff;
+  background-color: #e0dfd5;
   grid-area: leasing;
 }
 #subhero aside > div#shop {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   border: 6px solid #ffffff;
+  background-color: #e0dfd5;
   grid-area: shop;
 }
 
