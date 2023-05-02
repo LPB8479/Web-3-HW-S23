@@ -356,6 +356,10 @@ ul li {
   list-style: none;
 }
 
+.show-large {
+  display: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -474,14 +478,40 @@ footer li > a {
 /* =============
     Hero
 ============= */
-#hero section {
+#hero #hero-options {
+  display: -ms-grid;
+  display: grid;
+}
+@media (min-width: 768px) {
+  #hero #hero-options {
+    -ms-grid-columns: 40% auto;
+    grid-template-columns: 40% auto;
+        grid-template-areas: "section";
+  }
+  #hero #hero-options > div {
+    grid-area: section;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-options > div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+}
+@media (min-width: 1024px) {
+  #hero #hero-options {
+    -ms-grid-columns: 50% auto;
+    grid-template-columns: 50% auto;
+  }
+}
+#hero #hero-options section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 16px 1fr 16px;
   grid-template-columns: 16px 1fr 16px;
       grid-template-areas: ". hero-sub .";
 }
-#hero section > div {
+#hero #hero-options > div {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: hero-sub;
@@ -491,69 +521,24 @@ footer li > a {
   grid-template-columns: 85% 15%;
       grid-template-areas: "text arrow";
 }
-#hero section > div > h1 {
+#hero #hero-options > div > h1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: text;
 }
-#hero section > div > h3 {
+#hero #hero-options > div > h3 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: text;
-  color: #ffffff;
 }
-#hero section > div > a {
+#hero #hero-options > div > a {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: arrow;
 }
-#hero #hero-options {
-  display: -ms-grid;
-  display: grid;
-}
-@media (min-width: 768px) {
-  #hero #hero-options {
-    -ms-grid-columns: 40% 60%;
-    grid-template-columns: 40% 60%;
-        grid-template-areas: "section";
-  }
-  #hero #hero-options > div {
-    grid-area: section;
-  }
-}
-@media (min-width: 1024px) {
-  #hero #hero-options {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-        grid-template-areas: "section";
-  }
-  #hero #hero-options > div {
-    grid-area: section;
-  }
-  #hero #hero-options > div {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-}
-@media (min-width: 768px) {
-  #hero #hero-options > div {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  #hero #hero-options > div {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-}
-@media (min-width: 1024px) {
-  #hero #hero-options > div {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-}
-
-.location-price {
+#hero .location-price {
   background-color: #143b68;
+  color: #ffffff;
 }
 
 /* =============

@@ -2,47 +2,50 @@
     Hero
 ============= */
 #hero {
-  section {
+  #hero-options {
     display: grid;
-    grid-template-columns: 16px 1fr 16px;
-    grid-template-areas: ". hero-sub .";
-    > div {
+
+    @include md {
+      grid-template-columns: 40% auto;
+      grid-template-areas: "section";
+
+      >div {
+        grid-area: section;
+      }
+    }
+
+    @include lg {
+      grid-template-columns: 50% auto;
+    }
+    
+    section {
+      display: grid;
+      grid-template-columns: 16px 1fr 16px;
+      grid-template-areas: ". hero-sub .";
+    }
+    
+    >div {
       grid-area: hero-sub;
       display: grid;
       grid-template-columns: 85% 15%;
       grid-template-areas: "text arrow";
-      > h1 {
+
+      >h1 {
         grid-area: text;
       }
+
       >h3 {
         grid-area: text;
-        color: #ffffff;
       }
-      > a {
+      
+      >a {
         grid-area: arrow;
       }
     }
   }
-
-  #hero-options {
-    display: grid;
-    @include md {
-      grid-template-columns: 40% 60%;
-      grid-template-areas: "section";
-      > div {
-        grid-area: section;
-      }
-    }
-    @include lg {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "section";
-      > div {
-        grid-area: section;
-      }
-    }
+  
+  .location-price {
+    background-color: #143b68;
+    color: #ffffff;
   }
-}
-
-.location-price {
-  background-color: #143b68;
 }
