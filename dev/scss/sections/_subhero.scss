@@ -2,20 +2,38 @@
     Sub-Hero
 ============= */
 
-#subhero {
-  aside {
-    display: grid;
-    grid-template-columns: 16px 1fr 1fr 16px;
-    grid-template-areas: ". leasing shop .";
-    > div#leasing {
-      border: 6px solid #ffffff;
-      background-color: #e0dfd5;
-      grid-area: leasing;
-    }
-    > div#shop {
-      border: 6px solid #ffffff;
-      background-color: #e0dfd5;
-      grid-area: shop;
-    }
+#subhero{
+  @include md{
+      display: grid;
+      grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". sub-hero-cards .";
+
+      @include xxl{
+          grid-template-columns: auto 1200px auto;
+      }
   }
+  >div{
+      display: grid;
+      gap: 16px;
+      
+      @include md{
+          grid-area: sub-hero-cards;
+          grid-template-columns: 50% auto;
+      }
+
+      aside{
+          display: grid;
+          grid-template-columns: 16px auto 16px;
+          grid-template-areas: ". sub-hero .";
+          background-color: #e0dfd5;
+          
+          >div{
+              
+              grid-area: sub-hero;
+              display: grid;
+              grid-template-columns: 70% auto;
+          }
+      }
+  }
+  
 }

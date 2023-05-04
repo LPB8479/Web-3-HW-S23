@@ -2,19 +2,46 @@
     Gallery
 ============= */
 #gallery {
-  ul {
+  @include lg {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "tank centerbeam"
-    "tank gondola";
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". gallery .";
+  }
+
+  @include xxl {
+    grid-template-columns: auto 1200px auto;
+  }
+
+  ul {
+    @include md {
+      grid-area: gallery;
+      display: grid;
+      grid-template-columns: 50% auto;
+    }
+
+    @include lg {
+      grid-template-columns: 60% auto;
+    }
+
+    @include xxl {
+      grid-template-areas:
+        "tank centerbeam"
+        "tank gondola";
+    }
     #tank {
-      grid-area: tank;
+      @include xxl {
+        grid-area: tank;
+      }
     }
     #centerbeam {
-      grid-area: centerbeam;
+      @include xxl {
+        grid-area: centerbeam;
+      }
     }
     #gondola {
+      @include xxl {
         grid-area: gondola;
+      }
     }
   }
 }

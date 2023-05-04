@@ -3,49 +3,36 @@
 ============= */
 #hero {
   #hero-options {
-    display: grid;
-
     @include md {
+      display: grid;
       grid-template-columns: 40% auto;
-      grid-template-areas: "section";
-
-      >div {
-        grid-area: section;
-      }
     }
 
     @include lg {
       grid-template-columns: 50% auto;
     }
-    
+
     section {
       display: grid;
-      grid-template-columns: 16px 1fr 16px;
       grid-template-areas: ". hero-sub .";
-    }
-    
-    >div {
-      grid-area: hero-sub;
-      display: grid;
-      grid-template-columns: 85% 15%;
-      grid-template-areas: "text arrow";
 
-      >h1 {
-        grid-area: text;
-      }
-
-      >h3 {
-        grid-area: text;
-      }
-      
-      >a {
-        grid-area: arrow;
+      > div {
+        grid-area: hero-sub;
       }
     }
-  }
-  
-  .location-price {
-    background-color: #143b68;
-    color: #ffffff;
+
+    #hero-bottom-left {
+      @include xxl {
+        grid-template-columns: 20% auto 16px;
+      }
+    }
+
+    #hero-bottom-right {
+      background-color: #143b68;
+      color: #ffffff;
+      @include xxl {
+        grid-template-columns: 16px auto 20%;
+      }
+    }
   }
 }

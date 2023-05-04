@@ -19,7 +19,17 @@ ul{
         list-style: none;
     }
 }
+
 .show-large{
     display: none;
-    //something else, copy from repo
+    @include lg{
+        display: block;
+    }
+}
+
+.show-extra-large{
+    display: none;
+    @include xxl{
+        display: block;
+    }
 }
