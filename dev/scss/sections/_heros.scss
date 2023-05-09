@@ -28,8 +28,8 @@
     }
 
     #hero-bottom-right {
-      background-color: #143b68;
-      color: #ffffff;
+      background-color: var(--gatxblue);
+      color: var(--white);
       @include xxl {
         grid-template-columns: 16px auto 20%;
       }

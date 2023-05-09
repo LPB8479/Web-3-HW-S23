@@ -13,6 +13,7 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --gatxblue: #143b68;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -414,7 +415,7 @@ img {
     Footer
 ============= */
 footer {
-  background-color: #143b68;
+  background-color: var(--gatxblue);
 }
 @media (min-width: 768px) {
   footer div {
@@ -470,7 +471,7 @@ footer {
 footer h1,
 footer li,
 footer li > a {
-  color: #ffffff;
+  color: var(--white);
 }
 
 /* =============
@@ -523,8 +524,8 @@ footer li > a {
   }
 }
 #hero #hero-options #hero-bottom-right {
-  background-color: #143b68;
-  color: #ffffff;
+  background-color: var(--gatxblue);
+  color: var(--white);
 }
 @media (min-width: 1440px) {
   #hero #hero-options #hero-bottom-right {

@@ -2,7 +2,7 @@
     Footer
 ============= */
 footer {
-    background-color: #143b68;
+    background-color: var(--gatxblue);
     @include md {
         div {
             display: grid;
@@ -30,6 +30,6 @@ footer {
     h1,
     li,
     li>a {
-        color: #ffffff;
+        color: var(--white);
     }
 }
