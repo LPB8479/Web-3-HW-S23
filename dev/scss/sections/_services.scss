@@ -16,6 +16,14 @@
         grid-area: card-data;
       }
     }
+    width: 320px;
+    @include md {
+      width: 360px;
+    }
+    @include lg {
+      width: 320px;
+    }
+    background-color: #F8F9FA;
   }
   @include md {
     #container {

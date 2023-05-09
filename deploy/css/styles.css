@@ -517,11 +517,17 @@ footer li > a {
   -ms-grid-column: 2;
   grid-area: hero-sub;
 }
+#hero #hero-options #hero-bottom-left {
+  background-color: #F2F6FA;
+}
 @media (min-width: 1440px) {
   #hero #hero-options #hero-bottom-left {
     -ms-grid-columns: 20% auto 16px;
     grid-template-columns: 20% auto 16px;
   }
+}
+#hero #hero-options #hero-bottom-left div > a {
+  color: var(--black);
 }
 #hero #hero-options #hero-bottom-right {
   background-color: var(--gatxblue);
@@ -532,6 +538,9 @@ footer li > a {
     -ms-grid-columns: 16px auto 20%;
     grid-template-columns: 16px auto 20%;
   }
+}
+#hero #hero-options #hero-bottom-right div > a {
+  color: var(--white);
 }
 
 /* =============
@@ -586,6 +595,20 @@ footer li > a {
   display: grid;
   -ms-grid-columns: 70% auto;
   grid-template-columns: 70% auto;
+  margin: 12px;
+}
+@media (min-width: 768px) {
+  #subhero > div aside > div {
+    margin: 23px;
+  }
+}
+@media (min-width: 1024px) {
+  #subhero > div aside > div {
+    margin: 16px;
+  }
+}
+#subhero > div aside > div > aside > img {
+  border: 5px solid var(--white);
 }
 
 /* =============
@@ -666,6 +689,10 @@ footer li > a {
 /* =============
     Services
 ============= */
+#services section {
+  width: 320px;
+  background-color: #F8F9FA;
+}
 #services section img {
   width: 100%;
 }
@@ -680,6 +707,16 @@ footer li > a {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: card-data;
+}
+@media (min-width: 768px) {
+  #services section {
+    width: 360px;
+  }
+}
+@media (min-width: 1024px) {
+  #services section {
+    width: 320px;
+  }
 }
 @media (min-width: 768px) {
   #services #container {

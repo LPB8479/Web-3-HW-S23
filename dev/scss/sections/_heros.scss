@@ -25,6 +25,10 @@
       @include xxl {
         grid-template-columns: 20% auto 16px;
       }
+      background-color: #F2F6FA;
+      div > a {
+        color: var(--black);
+      }
     }
 
     #hero-bottom-right {
@@ -32,6 +36,9 @@
       color: var(--white);
       @include xxl {
         grid-template-columns: 16px auto 20%;
+      }
+      div > a {
+        color: var(--white)
       }
     }
   }
