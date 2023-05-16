@@ -357,8 +357,35 @@ ul li {
   list-style: none;
 }
 
+.content-space-top {
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .content-space-top {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .content-space-top {
+    margin-top: 30px;
+  }
+}
+
 .show-large {
   display: none;
+}
+.show-large .content-space-top {
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .show-large .content-space-top {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .show-large .content-space-top {
+    margin-top: 30px;
+  }
 }
 @media (min-width: 1024px) {
   .show-large {
@@ -378,9 +405,28 @@ ul li {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
+.blueButton {
+  background-color: var(--gatxblue);
+  color: white;
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+.whiteButton {
+  background-color: white;
+  color: var(--gatxblue);
+  padding: 8px 16px;
+  display: inline-block;
+}
+
 /* =============
     Forms
 ============= */
@@ -415,63 +461,139 @@ img {
     Footer
 ============= */
 footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". footer .";
   background-color: var(--gatxblue);
+  color: var(--white);
+  padding: 24px 0;
+}
+@media (min-width: 1440px) {
+  footer {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+footer > div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer;
 }
 @media (min-width: 768px) {
-  footer div {
+  footer > div {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 16px 1fr 1fr 1fr 16px;
-    grid-template-columns: 16px 1fr 1fr 1fr 16px;
-        grid-template-areas: ". locations newsletter ." ". locations socials .";
+    -ms-grid-columns: 50% 16px auto;
+    grid-template-columns: 50% auto;
+    -ms-grid-rows: auto 16px auto;
+        grid-template-areas: "locations newsletter" "locations socials";
+    gap: 16px;
   }
-  footer div #locations {
+}
+@media (min-width: 1024px) {
+  footer > div {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "locations newsletter socials";
+  }
+}
+@media (min-width: 768px) {
+  footer > div #locations {
     grid-area: locations;
   }
-  footer div #newsletter {
+}
+footer > div #locations h1 {
+  color: var(--white);
+}
+footer > div #locations section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer > div #locations section i {
+  font-size: 1.25rem;
+  margin-right: 16px;
+}
+@media (min-width: 768px) {
+  footer > div #newsletter {
     grid-area: newsletter;
   }
-  footer div #socials {
+}
+footer > div #newsletter form input {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px 8px;
+}
+footer > div #newsletter form div {
+  text-align: right;
+}
+footer > div #newsletter form div button {
+  margin-top: 16px;
+  border: none;
+}
+@media (min-width: 768px) {
+  footer > div #socials {
     grid-area: socials;
   }
 }
 @media (min-width: 768px) {
-  footer div #locations {
+  footer > div #locations {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
   }
-  footer div #newsletter {
+  footer > div #newsletter {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
-  footer div #socials {
-    -ms-grid-row: 2;
+  footer > div #socials {
+    -ms-grid-row: 3;
     -ms-grid-column: 3;
   }
 }
 @media (min-width: 1024px) {
-  footer div {
-        grid-template-areas: ". locations newsletter socials .";
-  }
-  footer div #locations {
+  footer > div #locations {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  footer > div #newsletter {
+    -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
-  footer div #newsletter {
+  footer > div #socials {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
-  footer div #socials {
-    -ms-grid-row: 1;
-    -ms-grid-column: 4;
+}
+@media (min-width: 1024px) {
+  footer > div #socials {
+    text-align: right;
   }
 }
-footer h1,
-footer li,
-footer li > a {
+footer > div #socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (min-width: 1024px) {
+  footer > div #socials ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+footer > div #socials ul li {
+  margin-right: 16px;
+}
+footer > div #socials ul li a {
   color: var(--white);
+  font-size: 1.875rem;
 }
 
 /* =============
@@ -493,6 +615,10 @@ footer li > a {
 /* =============
     Hero
 ============= */
+#hero img {
+  font-size: 0;
+  display: block;
+}
 @media (min-width: 768px) {
   #hero #hero-options {
     display: -ms-grid;
@@ -507,15 +633,32 @@ footer li > a {
     grid-template-columns: 50% auto;
   }
 }
-#hero #hero-options section {
+#hero #hero-options .hero-bottom-card {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
       grid-template-areas: ". hero-sub .";
+  padding: 16px 0;
 }
-#hero #hero-options section > div {
+#hero #hero-options .hero-bottom-card > div {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: hero-sub;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#hero #hero-options .hero-bottom-card > div aside {
+  margin-left: auto;
+}
+#hero #hero-options .hero-bottom-card > div aside a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 #hero #hero-options #hero-bottom-left {
   background-color: #F2F6FA;
@@ -526,7 +669,7 @@ footer li > a {
     grid-template-columns: 20% auto 16px;
   }
 }
-#hero #hero-options #hero-bottom-left div > a {
+#hero #hero-options #hero-bottom-left a {
   color: var(--black);
 }
 #hero #hero-options #hero-bottom-right {
@@ -539,7 +682,7 @@ footer li > a {
     grid-template-columns: 16px auto 20%;
   }
 }
-#hero #hero-options #hero-bottom-right div > a {
+#hero #hero-options #hero-bottom-right a {
   color: var(--white);
 }
 
@@ -579,35 +722,20 @@ footer li > a {
     -ms-grid-column: 2;
   }
 }
-#subhero > div aside {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 16px auto 16px;
-  grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". sub-hero .";
+#subhero > div .subhero-card {
+  padding: 16px;
+  color: var(--black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
+          box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
   background-color: #e0dfd5;
 }
-#subhero > div aside > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: sub-hero;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 70% auto;
-  grid-template-columns: 70% auto;
-  margin: 12px;
-}
-@media (min-width: 768px) {
-  #subhero > div aside > div {
-    margin: 23px;
-  }
-}
-@media (min-width: 1024px) {
-  #subhero > div aside > div {
-    margin: 16px;
-  }
-}
-#subhero > div aside > div > aside > img {
+#subhero > div .subhero-card > aside > img {
   border: 5px solid var(--white);
 }
 
@@ -689,183 +817,159 @@ footer li > a {
 /* =============
     Services
 ============= */
-#services section {
-  width: 320px;
-  background-color: #F8F9FA;
+@media (min-width: 768px) {
+  #services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 16px auto 16px;
+    grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". services .";
+  }
 }
-#services section img {
+@media (min-width: 1440px) {
+  #services {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#services > div {
+  display: -ms-grid;
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #services > div {
+    grid-area: services;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "NT NT NT NT" "S1 S1 S2 S2" "S3 S3 S4 S4" ".. S5 S5 ..";
+  }
+}
+@media (min-width: 768px) {
+  #services > div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+@media (min-width: 1024px) {
+  #services > div {
+    -ms-grid-columns: (1fr)[6];
+    grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: "NT NT NT NT NT NT" "S1 S1 S2 S2 S3 S3" ".. S4 S4 S5 S5 ..";
+  }
+}
+@media (min-width: 768px) {
+  #services > div h1 {
+    grid-area: NT;
+  }
+}
+#services > div section img {
   width: 100%;
+  font-size: 0;
+  display: block;
 }
-#services section .card-data {
+#services > div section .card-data {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
       grid-template-areas: ". card-data .";
+  background-color: #f8f9fa;
+  padding: 16px 0;
+  -webkit-box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+          box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
 }
-#services section .card-data > div {
+#services > div section .card-data > div {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: card-data;
 }
 @media (min-width: 768px) {
-  #services section {
-    width: 360px;
-  }
-}
-@media (min-width: 1024px) {
-  #services section {
-    width: 320px;
+  #services > div #S1 {
+    grid-area: S1;
   }
 }
 @media (min-width: 768px) {
-  #services #container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-        grid-template-areas: "S1 S2" "S3 S4" "S5 S5";
-  }
-  #services #container #S1 {
-    grid-area: S1;
-    margin: 5px;
-  }
-  #services #container #S2 {
+  #services > div #S2 {
     grid-area: S2;
-    margin: 5px;
   }
-  #services #container #S3 {
+}
+@media (min-width: 768px) {
+  #services > div #S3 {
     grid-area: S3;
-    margin: 5px;
   }
-  #services #container #S4 {
+}
+@media (min-width: 768px) {
+  #services > div #S4 {
     grid-area: S4;
-    margin: 5px;
   }
-  #services #container #S5 {
+}
+@media (min-width: 768px) {
+  #services > div #S5 {
     grid-area: S5;
   }
 }
-@media (min-width: 1024px) {
-  #services #container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "S1 S1 S2 S2 S3 S3" "S4 S4 S4 S5 S5 S5";
-  }
-  #services #container #S1 {
-    grid-area: S1;
-  }
-  #services #container #S2 {
-    grid-area: S2;
-  }
-  #services #container #S3 {
-    grid-area: S3;
-  }
-  #services #container #S4 {
-    grid-area: S4;
-  }
-  #services #container #S5 {
-    grid-area: S5;
-  }
-  #services #container > section {
-    margin: 5px;
-  }
-  #services #container #S1 {
+@media (min-width: 768px) {
+  #services > div h1 {
     -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+  #services > div #S1 {
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
   }
-  #services #container #S2 {
-    -ms-grid-row: 1;
+  #services > div #S2 {
+    -ms-grid-row: 2;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
   }
-  #services #container #S3 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
-  }
-  #services #container #S4 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-  }
-  #services #container #S5 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 3;
-  }
-}
-@media (min-width: 768px) {
-  #services #container #S1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  #services #container #S2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  #services #container #S3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  #services #container #S4 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-  }
-  #services #container #S5 {
+  #services > div #S3 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
   }
-  #services #container #S1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  #services #container #S2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  #services #container #S3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  #services #container #S4 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-  }
-  #services #container #S5 {
+  #services > div #S4 {
     -ms-grid-row: 3;
-    -ms-grid-column: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  #services > div #S5 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 2;
   }
 }
 @media (min-width: 1024px) {
-  #services #container #S1 {
+  #services > div h1 {
     -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  #services > div #S1 {
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
   }
-  #services #container #S2 {
-    -ms-grid-row: 1;
+  #services > div #S2 {
+    -ms-grid-row: 2;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
   }
-  #services #container #S3 {
-    -ms-grid-row: 1;
+  #services > div #S3 {
+    -ms-grid-row: 2;
     -ms-grid-column: 5;
     -ms-grid-column-span: 2;
   }
-  #services #container #S4 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
+  #services > div #S4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
   }
-  #services #container #S5 {
-    -ms-grid-row: 2;
+  #services > div #S5 {
+    -ms-grid-row: 3;
     -ms-grid-column: 4;
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 2;
   }
 }

@@ -1,3 +1,15 @@
 /* =============
     Buttons
 ============= */
+.blueButton{
+    background-color: var(--gatxblue);
+    color: white;
+    padding: 8px 16px;
+    display: inline-block;
+}
+.whiteButton{
+    background-color: white;
+    color: var(--gatxblue);
+    padding: 8px 16px;
+    display: inline-block;
+}

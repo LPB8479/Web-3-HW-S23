@@ -2,82 +2,90 @@
     Services
 ============= */
 #services {
-  section {
-    img {
-      width: 100%;
-    }
-
-    .card-data {
-      display: grid;
-      grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". card-data .";
-
-      > div {
-        grid-area: card-data;
-      }
-    }
-    width: 320px;
-    @include md {
-      width: 360px;
-    }
-    @include lg {
-      width: 320px;
-    }
-    background-color: #F8F9FA;
-  }
   @include md {
-    #container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". services .";
+  }
+
+  @include xxl {
+    grid-template-columns: auto 1200px auto;
+  }
+
+  > div {
+    display: grid;
+    gap: 16px;
+
+    @include md {
+      grid-area: services;
+      grid-template-columns: repeat(4, 1fr);
       grid-template-areas:
-        "S1 S2"
-        "S3 S4"
-        "S5 S5";
-      #S1 {
-        grid-area: S1;
-        margin: 5px;
-      }
-      #S2 {
-        grid-area: S2;
-        margin: 5px;
-      }
-      #S3 {
-        grid-area: S3;
-        margin: 5px;
-      }
-      #S4 {
-        grid-area: S4;
-        margin: 5px;
-      }
-      #S5 {
-        grid-area: S5;
+        "NT NT NT NT"
+        "S1 S1 S2 S2"
+        "S3 S3 S4 S4"
+        ".. S5 S5 ..";
+    }
+
+    @include lg {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas:
+        "NT NT NT NT NT NT"
+        "S1 S1 S2 S2 S3 S3"
+        ".. S4 S4 S5 S5 ..";
+    }
+
+    h1 {
+      @include md {
+        grid-area: NT;
       }
     }
-  }
-  @include lg {
-    #container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-        "S1 S1 S2 S2 S3 S3"
-        "S4 S4 S4 S5 S5 S5";
-      #S1 {
+
+    section {
+      img {
+        width: 100%;
+        font-size: 0;
+        display: block;
+      }
+
+      .card-data {
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". card-data .";
+        background-color: #f8f9fa;
+        padding: 16px 0;
+        box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+        > div {
+          grid-area: card-data;
+        }
+      }
+    }
+    #S1 {
+      @include md {
         grid-area: S1;
       }
-      #S2 {
+    }
+
+    #S2 {
+      @include md {
         grid-area: S2;
       }
-      #S3 {
+    }
+
+    #S3 {
+      @include md {
         grid-area: S3;
       }
-      #S4 {
+    }
+
+    #S4 {
+      @include md {
         grid-area: S4;
       }
-      #S5 {
+    }
+
+    #S5 {
+      @include md {
         grid-area: S5;
-      }
-      > section {
-        margin: 5px;
       }
     }
   }

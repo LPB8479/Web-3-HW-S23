@@ -2,6 +2,11 @@
     Hero
 ============= */
 #hero {
+  img {
+    font-size: 0;
+    display: block;
+  }
+
   #hero-options {
     @include md {
       display: grid;
@@ -12,21 +17,35 @@
       grid-template-columns: 50% auto;
     }
 
-    section {
+    .hero-bottom-card {
       display: grid;
+      grid-template-columns: 16px auto 16px;
       grid-template-areas: ". hero-sub .";
+      padding: 16px 0;
 
-      > div {
+      >div {
         grid-area: hero-sub;
+        display: flex;
+        align-items: center;
+
+        aside {
+          margin-left: auto;
+
+          a {
+            display: flex;
+          }
+        }
       }
     }
 
     #hero-bottom-left {
+      background-color: #F2F6FA;
       @include xxl {
         grid-template-columns: 20% auto 16px;
       }
-      background-color: #F2F6FA;
-      div > a {
+
+
+      a {
         color: var(--black);
       }
     }
@@ -34,10 +53,12 @@
     #hero-bottom-right {
       background-color: var(--gatxblue);
       color: var(--white);
+
       @include xxl {
         grid-template-columns: 16px auto 20%;
       }
-      div > a {
+
+      a {
         color: var(--white)
       }
     }

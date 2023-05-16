@@ -2,34 +2,98 @@
     Footer
 ============= */
 footer {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
     background-color: var(--gatxblue);
-    @include md {
-        div {
-            display: grid;
-            grid-template-columns: 16px 1fr 1fr 1fr 16px;
-            grid-template-areas:
-                ". locations newsletter ."
-                ". locations socials .";
+    color: var(--white);
+    padding: 24px 0;
 
-            #locations {
+    @include xxl {
+        grid-template-columns: auto 1200px auto;
+    }
+
+    >div {
+        grid-area: footer;
+
+        @include md {
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas:
+                "locations newsletter"
+                "locations socials";
+            gap: 16px;
+        }
+
+        @include lg {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "locations newsletter socials";
+        }
+
+        #locations {
+            @include md {
                 grid-area: locations;
             }
-            #newsletter {
+
+            h1 {
+                color: var(--white);
+            }
+
+            section {
+                display: flex;
+
+                i {
+                    font-size: rem-calc(20);
+                    margin-right: 16px;
+                }
+            }
+        }
+
+        #newsletter {
+            @include md {
                 grid-area: newsletter;
             }
-            #socials {
-                grid-area: socials;
+
+            form {
+                input {
+                    width: 100%;
+                    border-radius: 0;
+                    border: none;
+                    box-sizing: border-box;
+                    padding: 16px 8px;
+                }
+
+                div{
+                    text-align: right;
+                    button{
+                        margin-top: 16px;
+                        border: none;
+                    }
+                }
             }
         }
-    }
-    @include lg {
-        div {
-            grid-template-areas: ". locations newsletter socials .";
+
+        #socials{
+            @include md{
+                grid-area: socials;
+            }
+            @include lg{
+                text-align: right;
+            }
+
+            ul{
+                display: flex;
+                @include lg{
+                    justify-content: flex-end;
+                }
+                li{
+                    margin-right: 16px;
+                    a{
+                        color: var(--white);
+                        font-size: rem-calc(30);
+                    }
+                }
+            }
         }
-    }
-    h1,
-    li,
-    li>a {
-        color: var(--white);
     }
 }
