@@ -14,6 +14,7 @@ html {
   --black: #000000;
   --white: #ffffff;
   --gatxblue: #143b68;
+  --bluewhite: #f5f8fA;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -402,6 +403,10 @@ ul li {
   }
 }
 
+a:link, a:visited {
+  text-decoration: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -661,7 +666,7 @@ footer > div #socials ul li a {
   display: flex;
 }
 #hero #hero-options #hero-bottom-left {
-  background-color: #F2F6FA;
+  background-color: var(--bluewhite);
 }
 @media (min-width: 1440px) {
   #hero #hero-options #hero-bottom-left {
@@ -874,7 +879,7 @@ footer > div #socials ul li a {
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
       grid-template-areas: ". card-data .";
-  background-color: #f8f9fa;
+  background-color: var(--bluewhite);
   padding: 16px 0;
   -webkit-box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
           box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);

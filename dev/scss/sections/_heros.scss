@@ -39,7 +39,7 @@
     }
 
     #hero-bottom-left {
-      background-color: #F2F6FA;
+      background-color: var(--bluewhite);
       @include xxl {
         grid-template-columns: 20% auto 16px;
       }

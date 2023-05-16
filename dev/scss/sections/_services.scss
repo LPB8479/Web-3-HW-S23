@@ -51,7 +51,7 @@
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". card-data .";
-        background-color: #f8f9fa;
+        background-color: var(--bluewhite);
         padding: 16px 0;
         box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
         > div {
