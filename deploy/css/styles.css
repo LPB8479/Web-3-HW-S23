@@ -410,6 +410,10 @@ a:link, a:visited {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
 h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
@@ -423,6 +427,9 @@ h1, h2, h3, h4, h5, p {
   color: white;
   padding: 8px 16px;
   display: inline-block;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .whiteButton {
@@ -430,6 +437,8 @@ h1, h2, h3, h4, h5, p {
   color: var(--gatxblue);
   padding: 8px 16px;
   display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 /* =============
@@ -474,6 +483,23 @@ footer {
   background-color: var(--gatxblue);
   color: var(--white);
   padding: 24px 0;
+}
+footer h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+footer h2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+footer address, footer a {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
 }
 @media (min-width: 1440px) {
   footer {
@@ -533,6 +559,10 @@ footer > div #newsletter form input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 16px 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--gatxblue);
 }
 footer > div #newsletter form div {
   text-align: right;
@@ -616,13 +646,57 @@ footer > div #socials ul li a {
   -ms-grid-column: 2;
   grid-area: search;
 }
+#search button {
+  border-radius: 5px;
+}
+#search input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  #search input {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 41px;
+  }
+}
+@media (min-width: 1024px) {
+  #search input {
+    font-size: 35px;
+    line-height: 48px;
+  }
+}
 
 /* =============
     Hero
 ============= */
+#hero h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+@media (min-width: 1024px) {
+  #hero h1 {
+    font-style: 25px;
+  }
+}
+#hero a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25;
+}
 #hero img {
   font-size: 0;
   display: block;
+}
+#hero h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+#hero h3 > span {
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   #hero #hero-options {
@@ -694,6 +768,23 @@ footer > div #socials ul li a {
 /* =============
     Sub-Hero
 ============= */
+#subhero h1 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+}
+@media (min-width: 768px) {
+  #subhero h1 {
+    font-size: 29px;
+    line-height: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  #subhero h1 {
+    font-size: 31px;
+    line-height: 30px;
+  }
+}
 @media (min-width: 768px) {
   #subhero {
     display: -ms-grid;
@@ -822,6 +913,24 @@ footer > div #socials ul li a {
 /* =============
     Services
 ============= */
+#services h1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+@media (min-width: 768px) {
+  #services h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+@media (min-width: 1024px) {
+  #services h1 {
+    font-weight: 300;
+    font-size: 37px;
+    line-height: 50px;
+  }
+}
 @media (min-width: 768px) {
   #services {
     display: -ms-grid;
@@ -867,6 +976,16 @@ footer > div #socials ul li a {
   #services > div h1 {
     grid-area: NT;
   }
+}
+#services > div section h1 {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 30px;
+}
+#services > div section p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 #services > div section img {
   width: 100%;

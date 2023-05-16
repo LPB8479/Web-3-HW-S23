@@ -8,4 +8,21 @@
   > div {
     grid-area: search;
   }
+  button{
+    border-radius: 5px;
+  }
+  input{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    @include md{
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 41px;
+    }
+    @include lg{
+      font-size: 35px;
+      line-height: 48px;
+    }
+  }
 }

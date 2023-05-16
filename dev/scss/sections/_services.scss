@@ -2,6 +2,20 @@
     Services
 ============= */
 #services {
+  h1{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    @include md{
+      font-size: 28px;
+      line-height: 38px;
+    }
+    @include lg{
+      font-weight: 300;
+      font-size: 37px;
+      line-height: 50px;
+    }
+  }
   @include md {
     display: grid;
     grid-template-columns: 16px auto 16px;
@@ -41,6 +55,16 @@
     }
 
     section {
+      h1{
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 30px;
+      }
+      p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+      }
       img {
         width: 100%;
         font-size: 0;

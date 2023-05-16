@@ -3,6 +3,20 @@
 ============= */
 
 #subhero {
+  h1{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    @include md{
+      font-size: 29px;
+      line-height: 35px;
+    }
+    @include lg{
+      font-size: 31px;
+      line-height: 30px;
+    }
+  }
+
   @include md {
     display: grid;
     grid-template-columns: 16px auto 16px;

@@ -2,9 +2,30 @@
     Hero
 ============= */
 #hero {
+  h1{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    @include lg{
+      font-style: 25px;
+    }
+  }
+  a{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25;
+  }
   img {
     font-size: 0;
     display: block;
+  }
+  h3{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    >span{
+      font-weight: 600;
+    }
   }
 
   #hero-options {

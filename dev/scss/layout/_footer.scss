@@ -2,6 +2,23 @@
     Footer
 ============= */
 footer {
+    h1{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    address, a{
+        color: white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
@@ -61,6 +78,10 @@ footer {
                     border: none;
                     box-sizing: border-box;
                     padding: 16px 8px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: var(--gatxblue);
                 }
 
                 div{
