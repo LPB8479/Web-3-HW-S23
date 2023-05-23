@@ -424,21 +424,32 @@ h1, h2, h3, h4, h5, p {
 ============= */
 .blueButton {
   background-color: var(--gatxblue);
+  padding: 10px 16px;
   color: white;
-  padding: 8px 16px;
-  display: inline-block;
-  border: none;
-  font-weight: 600;
-  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 1.875rem;
+  border: 2px solid var(--gatxblue);
+}
+.blueButton:hover {
+  background-color: white;
+  color: var(--gatxblue);
 }
 
 .whiteButton {
   background-color: white;
+  padding: 10px 16px;
   color: var(--gatxblue);
-  padding: 8px 16px;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 1.875rem;
+  border: 2px solid white;
+}
+.whiteButton:hover {
+  background-color: var(--gatxblue);
+  color: white;
 }
 
 /* =============
@@ -569,7 +580,6 @@ footer > div #newsletter form div {
 }
 footer > div #newsletter form div button {
   margin-top: 16px;
-  border: none;
 }
 @media (min-width: 768px) {
   footer > div #socials {
@@ -640,32 +650,51 @@ footer > div #socials ul li a {
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
       grid-template-areas: ". search .";
+  padding: 16px 0;
+}
+@media (min-width: 768px) {
+  #search {
+    padding: 24px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #search {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
 }
 #search > div {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: search;
 }
-#search button {
-  border-radius: 5px;
+#search > div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-#search input {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+#search > div form input {
+  border: none;
+  border-bottom: 1px solid var(--gatxblue);
+  width: 100%;
+  border-radius: 0;
+  margin-right: 8px;
+  font-size: 0.875rem;
+  color: var(--gatxblue);
 }
 @media (min-width: 768px) {
-  #search input {
+  #search > div form input {
+    font-size: 1.875rem;
     font-weight: 300;
-    font-size: 30px;
-    line-height: 41px;
   }
 }
-@media (min-width: 1024px) {
-  #search input {
-    font-size: 35px;
-    line-height: 48px;
+@media (min-width: 1200px) {
+  #search > div form input {
+    font-size: 2.1875rem;
   }
+}
+#search > div button {
+  border-radius: 5px;
 }
 
 /* =============

@@ -5,24 +5,46 @@
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+  padding: 16px 0;
+
+  //position: sticky;
+  //top: 100px;
+
+  @include md {
+    padding: 24px 0;
+  }
+
+  @include xxl {
+    grid-template-columns: auto 1200px auto;
+  }
+
   > div {
     grid-area: search;
-  }
-  button{
-    border-radius: 5px;
-  }
-  input{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    @include md{
-      font-weight: 300;
-      font-size: 30px;
-      line-height: 41px;
+
+    form {
+      display: flex;
+
+      input {
+        border: none;
+        border-bottom: 1px solid var(--gatxblue);
+        width: 100%;
+        border-radius: 0;
+        margin-right: 8px;
+        font-size: rem-calc(14);
+        color: var(--gatxblue);
+
+        @include md {
+          font-size: rem-calc(30);
+          font-weight: 300;
+        }
+
+        @include xl {
+          font-size: rem-calc(35);
+        }
+      }
     }
-    @include lg{
-      font-size: 35px;
-      line-height: 48px;
+    button {
+      border-radius: 5px;
     }
   }
 }
