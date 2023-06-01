@@ -3,18 +3,29 @@
 ============= */
 .blueButton{
     background-color: var(--gatxblue);
+    padding: 10px 16px;
     color: white;
-    padding: 8px 16px;
-    display: inline-block;
-    border: none;
-    font-weight: 600;
-    font-size: 14px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: rem-calc(30);
+    border: 2px solid var(--gatxblue);
+
+    &:hover{
+        background-color: white;
+        color: var(--gatxblue);
+    }
 }
 .whiteButton{
     background-color: white;
+    padding: 10px 16px;
     color: var(--gatxblue);
-    padding: 8px 16px;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 14px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: rem-calc(30);
+    border: 2px solid white;
+
+    &:hover{
+        background-color: var(--gatxblue);
+        color: white;
+    }
 }

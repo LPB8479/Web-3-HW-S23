@@ -2,32 +2,27 @@
     Hero
 ============= */
 #hero {
-  h1{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    @include lg{
-      font-style: 25px;
+  #hero-img {
+    background-image: url("../img/heroes/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+
+    @include md{
+      height: 50vh;
     }
-  }
-  a{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25;
-  }
-  img {
-    font-size: 0;
-    display: block;
-  }
-  h3{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    >span{
-      font-weight: 600;
+
+    @include xl{
+      background-position: center 80%;
+      height: 65vh;
+    }
+
+    @include xxl{
+      height: 70vh;
     }
   }
 
+  
   #hero-options {
     @include md {
       display: grid;
@@ -44,33 +39,47 @@
       grid-template-areas: ". hero-sub .";
       padding: 16px 0;
 
-      >div {
+      > div {
         grid-area: hero-sub;
         display: flex;
         align-items: center;
-
+        
         aside {
           margin-left: auto;
-
-          a {
+          
+          a:link, a:visited {
             display: flex;
+            color: white;
+            transition: 0.25s;
+            
+            &:hover, &:active{
+              color: var(--bluedark);
+            }
           }
         }
       }
     }
-
+    
     #hero-bottom-left {
       background-color: var(--bluewhite);
       @include xxl {
         grid-template-columns: 20% auto 16px;
       }
-
+      
+      h1{
+        font-size: rem-calc(18);
+        margin-bottom: 8px;
+        
+        @include xl{
+          font-size: rem-calc(25);
+        }
+      }
 
       a {
         color: var(--black);
       }
     }
-
+    
     #hero-bottom-right {
       background-color: var(--gatxblue);
       color: var(--white);
@@ -79,8 +88,16 @@
         grid-template-columns: 16px auto 20%;
       }
 
+      h3{
+        font-weight: 400;
+        font-size: rem-calc(16);
+        span{
+          font-weight: 600;  
+        }
+      }
+
       a {
-        color: var(--white)
+        color: var(--white);
       }
     }
   }

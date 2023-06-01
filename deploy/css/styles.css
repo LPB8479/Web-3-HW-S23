@@ -15,6 +15,7 @@ html {
   --white: #ffffff;
   --gatxblue: #143b68;
   --bluewhite: #f5f8fA;
+  --bluedark: #293241;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -416,21 +417,32 @@ h1, h2, h3, h4, h5, p {
 ============= */
 .blueButton {
   background-color: var(--gatxblue);
+  padding: 10px 16px;
   color: white;
-  padding: 8px 16px;
-  display: inline-block;
-  border: none;
-  font-weight: 600;
-  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 1.875rem;
+  border: 2px solid var(--gatxblue);
+}
+.blueButton:hover {
+  background-color: white;
+  color: var(--gatxblue);
 }
 
 .whiteButton {
   background-color: white;
+  padding: 10px 16px;
   color: var(--gatxblue);
-  padding: 8px 16px;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 1.875rem;
+  border: 2px solid white;
+}
+.whiteButton:hover {
+  background-color: var(--gatxblue);
+  color: white;
 }
 
 /* =============
@@ -547,7 +559,6 @@ footer > div #newsletter form div {
 }
 footer > div #newsletter form div button {
   margin-top: 16px;
-  border: none;
 }
 @media (min-width: 768px) {
   footer > div #socials {
@@ -581,62 +592,80 @@ footer > div #socials ul li a {
 #search {
   display: grid;
   grid-template-columns: 16px auto 16px;
+<<<<<<< HEAD
   grid-template-areas: ". search .";
+=======
+      grid-template-areas: ". search .";
+  padding: 16px 0;
+}
+@media (min-width: 768px) {
+  #search {
+    padding: 24px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #search {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+>>>>>>> 68f55c3b0e788254265770563eb09eb8d44f8d2d
 }
 #search > div {
   grid-area: search;
 }
-#search button {
-  border-radius: 5px;
+#search > div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-#search input {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+#search > div form input {
+  border: none;
+  border-bottom: 1px solid var(--gatxblue);
+  width: 100%;
+  border-radius: 0;
+  margin-right: 8px;
+  font-size: 0.875rem;
+  color: var(--gatxblue);
 }
 @media (min-width: 768px) {
-  #search input {
+  #search > div form input {
+    font-size: 1.875rem;
     font-weight: 300;
-    font-size: 30px;
-    line-height: 41px;
   }
 }
-@media (min-width: 1024px) {
-  #search input {
-    font-size: 35px;
-    line-height: 48px;
+@media (min-width: 1200px) {
+  #search > div form input {
+    font-size: 2.1875rem;
   }
+}
+#search > div button {
+  border-radius: 5px;
 }
 
 /* =============
     Hero
 ============= */
-#hero h1 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
+#hero #hero-img {
+  background-image: url("../img/heroes/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
 }
-@media (min-width: 1024px) {
-  #hero h1 {
-    font-style: 25px;
+@media (min-width: 768px) {
+  #hero #hero-img {
+    height: 50vh;
   }
 }
-#hero a {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25;
+@media (min-width: 1200px) {
+  #hero #hero-img {
+    background-position: center 80%;
+    height: 65vh;
+  }
 }
-#hero img {
-  font-size: 0;
-  display: block;
-}
-#hero h3 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-}
-#hero h3 > span {
-  font-weight: 600;
+@media (min-width: 1440px) {
+  #hero #hero-img {
+    height: 70vh;
+  }
 }
 @media (min-width: 768px) {
   #hero #hero-options {
@@ -663,8 +692,20 @@ footer > div #socials ul li a {
 #hero #hero-options .hero-bottom-card > div aside {
   margin-left: auto;
 }
+<<<<<<< HEAD
 #hero #hero-options .hero-bottom-card > div aside a {
+=======
+#hero #hero-options .hero-bottom-card > div aside a:link, #hero #hero-options .hero-bottom-card > div aside a:visited {
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 68f55c3b0e788254265770563eb09eb8d44f8d2d
   display: flex;
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+#hero #hero-options .hero-bottom-card > div aside a:link:hover, #hero #hero-options .hero-bottom-card > div aside a:link:active, #hero #hero-options .hero-bottom-card > div aside a:visited:hover, #hero #hero-options .hero-bottom-card > div aside a:visited:active {
+  color: var(--bluedark);
 }
 #hero #hero-options #hero-bottom-left {
   background-color: var(--bluewhite);
@@ -672,6 +713,15 @@ footer > div #socials ul li a {
 @media (min-width: 1440px) {
   #hero #hero-options #hero-bottom-left {
     grid-template-columns: 20% auto 16px;
+  }
+}
+#hero #hero-options #hero-bottom-left h1 {
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+}
+@media (min-width: 1200px) {
+  #hero #hero-options #hero-bottom-left h1 {
+    font-size: 1.5625rem;
   }
 }
 #hero #hero-options #hero-bottom-left a {
@@ -685,6 +735,13 @@ footer > div #socials ul li a {
   #hero #hero-options #hero-bottom-right {
     grid-template-columns: 16px auto 20%;
   }
+}
+#hero #hero-options #hero-bottom-right h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+#hero #hero-options #hero-bottom-right h3 span {
+  font-weight: 600;
 }
 #hero #hero-options #hero-bottom-right a {
   color: var(--white);
