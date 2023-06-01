@@ -61,8 +61,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box; /* 1 */
+  box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -92,8 +91,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -231,8 +229,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -260,8 +257,7 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
@@ -338,15 +334,11 @@ template {
 }
 
 .header-footer-grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". header-footer .";
+  grid-template-areas: ". header-footer .";
 }
 .header-footer-grid > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: header-footer;
 }
 
@@ -445,13 +437,11 @@ h1, h2, h3, h4, h5, p {
     Forms
 ============= */
 [type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 [type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus, textarea:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 input[type=text],
@@ -475,11 +465,9 @@ img {
     Footer
 ============= */
 footer {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". footer .";
+  grid-template-areas: ". footer .";
   background-color: var(--gatxblue);
   color: var(--white);
   padding: 24px 0;
@@ -503,31 +491,24 @@ footer address, footer a {
 }
 @media (min-width: 1440px) {
   footer {
-    -ms-grid-columns: auto 1200px auto;
     grid-template-columns: auto 1200px auto;
   }
 }
 footer > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: footer;
 }
 @media (min-width: 768px) {
   footer > div {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% 16px auto;
     grid-template-columns: 50% auto;
-    -ms-grid-rows: auto 16px auto;
-        grid-template-areas: "locations newsletter" "locations socials";
+    grid-template-areas: "locations newsletter" "locations socials";
     gap: 16px;
   }
 }
 @media (min-width: 1024px) {
   footer > div {
-    -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "locations newsletter socials";
+    grid-template-areas: "locations newsletter socials";
   }
 }
 @media (min-width: 768px) {
@@ -539,8 +520,6 @@ footer > div #locations h1 {
   color: var(--white);
 }
 footer > div #locations section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 footer > div #locations section i {
@@ -556,8 +535,7 @@ footer > div #newsletter form input {
   width: 100%;
   border-radius: 0;
   border: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 16px 8px;
   font-weight: 600;
   font-size: 14px;
@@ -576,51 +554,17 @@ footer > div #newsletter form div button {
     grid-area: socials;
   }
 }
-@media (min-width: 768px) {
-  footer > div #locations {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 1;
-  }
-  footer > div #newsletter {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-  }
-  footer > div #socials {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-  }
-}
-@media (min-width: 1024px) {
-  footer > div #locations {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-  }
-  footer > div #newsletter {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  footer > div #socials {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-  }
-}
 @media (min-width: 1024px) {
   footer > div #socials {
     text-align: right;
   }
 }
 footer > div #socials ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 @media (min-width: 1024px) {
   footer > div #socials ul {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
 }
 footer > div #socials ul li {
@@ -635,15 +579,11 @@ footer > div #socials ul li a {
     Search
 ============= */
 #search {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". search .";
+  grid-template-areas: ". search .";
 }
 #search > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: search;
 }
 #search button {
@@ -700,43 +640,30 @@ footer > div #socials ul li a {
 }
 @media (min-width: 768px) {
   #hero #hero-options {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 40% auto;
     grid-template-columns: 40% auto;
   }
 }
 @media (min-width: 1024px) {
   #hero #hero-options {
-    -ms-grid-columns: 50% auto;
     grid-template-columns: 50% auto;
   }
 }
 #hero #hero-options .hero-bottom-card {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". hero-sub .";
+  grid-template-areas: ". hero-sub .";
   padding: 16px 0;
 }
 #hero #hero-options .hero-bottom-card > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: hero-sub;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 #hero #hero-options .hero-bottom-card > div aside {
   margin-left: auto;
 }
 #hero #hero-options .hero-bottom-card > div aside a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #hero #hero-options #hero-bottom-left {
@@ -744,7 +671,6 @@ footer > div #socials ul li a {
 }
 @media (min-width: 1440px) {
   #hero #hero-options #hero-bottom-left {
-    -ms-grid-columns: 20% auto 16px;
     grid-template-columns: 20% auto 16px;
   }
 }
@@ -757,7 +683,6 @@ footer > div #socials ul li a {
 }
 @media (min-width: 1440px) {
   #hero #hero-options #hero-bottom-right {
-    -ms-grid-columns: 16px auto 20%;
     grid-template-columns: 16px auto 20%;
   }
 }
@@ -787,48 +712,32 @@ footer > div #socials ul li a {
 }
 @media (min-width: 768px) {
   #subhero {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 16px auto 16px;
     grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". sub-hero-cards .";
+    grid-template-areas: ". sub-hero-cards .";
   }
 }
 @media (min-width: 768px) and (min-width: 1440px) {
   #subhero {
-    -ms-grid-columns: auto 1200px auto;
     grid-template-columns: auto 1200px auto;
   }
 }
 #subhero > div {
-  display: -ms-grid;
   display: grid;
   gap: 16px;
 }
 @media (min-width: 768px) {
   #subhero > div {
     grid-area: sub-hero-cards;
-    -ms-grid-columns: 50% auto;
     grid-template-columns: 50% auto;
-  }
-}
-@media (min-width: 768px) {
-  #subhero > div {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
   }
 }
 #subhero > div .subhero-card {
   padding: 16px;
   color: var(--black);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
-          box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
+  align-items: center;
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
   background-color: #e0dfd5;
 }
 #subhero > div .subhero-card > aside > img {
@@ -840,43 +749,31 @@ footer > div #socials ul li a {
 ============= */
 @media (min-width: 1024px) {
   #gallery {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 16px auto 16px;
     grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". gallery .";
+    grid-template-areas: ". gallery .";
   }
 }
 @media (min-width: 1440px) {
   #gallery {
-    -ms-grid-columns: auto 1200px auto;
     grid-template-columns: auto 1200px auto;
   }
 }
 @media (min-width: 768px) {
   #gallery ul {
     grid-area: gallery;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% auto;
     grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 1024px) {
   #gallery ul {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-}
-@media (min-width: 1024px) {
-  #gallery ul {
-    -ms-grid-columns: 60% auto;
     grid-template-columns: 60% auto;
   }
 }
 @media (min-width: 1440px) {
   #gallery ul {
-        grid-template-areas: "tank centerbeam" "tank gondola";
+    grid-template-areas: "tank centerbeam" "tank gondola";
   }
 }
 @media (min-width: 1440px) {
@@ -892,21 +789,6 @@ footer > div #socials ul li a {
 @media (min-width: 1440px) {
   #gallery ul #gondola {
     grid-area: gondola;
-  }
-}
-@media (min-width: 1440px) {
-  #gallery ul #tank {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-  }
-  #gallery ul #centerbeam {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  #gallery ul #gondola {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
   }
 }
 
@@ -933,43 +815,31 @@ footer > div #socials ul li a {
 }
 @media (min-width: 768px) {
   #services {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 16px auto 16px;
     grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". services .";
+    grid-template-areas: ". services .";
   }
 }
 @media (min-width: 1440px) {
   #services {
-    -ms-grid-columns: auto 1200px auto;
     grid-template-columns: auto 1200px auto;
   }
 }
 #services > div {
-  display: -ms-grid;
   display: grid;
   gap: 16px;
 }
 @media (min-width: 768px) {
   #services > div {
     grid-area: services;
-    -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "NT NT NT NT" "S1 S1 S2 S2" "S3 S3 S4 S4" ".. S5 S5 ..";
-  }
-}
-@media (min-width: 768px) {
-  #services > div {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    grid-template-areas: "NT NT NT NT" "S1 S1 S2 S2" "S3 S3 S4 S4" ".. S5 S5 ..";
   }
 }
 @media (min-width: 1024px) {
   #services > div {
-    -ms-grid-columns: (1fr)[6];
     grid-template-columns: repeat(6, 1fr);
-        grid-template-areas: "NT NT NT NT NT NT" "S1 S1 S2 S2 S3 S3" ".. S4 S4 S5 S5 ..";
+    grid-template-areas: "NT NT NT NT NT NT" "S1 S1 S2 S2 S3 S3" ".. S4 S4 S5 S5 ..";
   }
 }
 @media (min-width: 768px) {
@@ -993,19 +863,14 @@ footer > div #socials ul li a {
   display: block;
 }
 #services > div section .card-data {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". card-data .";
+  grid-template-areas: ". card-data .";
   background-color: var(--bluewhite);
   padding: 16px 0;
-  -webkit-box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
-          box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
 }
 #services > div section .card-data > div {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: card-data;
 }
 @media (min-width: 768px) {
@@ -1031,69 +896,5 @@ footer > div #socials ul li a {
 @media (min-width: 768px) {
   #services > div #S5 {
     grid-area: S5;
-  }
-}
-@media (min-width: 768px) {
-  #services > div h1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-  }
-  #services > div #S1 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-  #services > div #S2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-  }
-  #services > div #S3 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-  #services > div #S4 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-  }
-  #services > div #S5 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-  }
-}
-@media (min-width: 1024px) {
-  #services > div h1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  #services > div #S1 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-  #services > div #S2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-  }
-  #services > div #S3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
-  }
-  #services > div #S4 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-  }
-  #services > div #S5 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 2;
   }
 }
